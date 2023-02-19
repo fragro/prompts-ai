@@ -3,7 +3,7 @@ import { PromptEditor } from "./components/PromptEditor";
 import {
   Box,
   Container,
-  createMuiTheme,
+  createTheme,
   CssBaseline,
   ThemeProvider,
   Typography,
@@ -21,7 +21,7 @@ import ApiKeyDialog from "./components/dialogs/ApiKeyDialog";
 
 function App() {
   const dispatch = useDispatch();
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       type: "dark",
     },

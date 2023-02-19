@@ -86,7 +86,7 @@ export default function Conversation(props: Props) {
   return (
     <Card className={styles.card}>
       <CardContent>
-        <Grid container alignItems={"center"} justify={"space-between"}>
+        <Grid container alignItems={"center"} justifyContent={"space-between"}>
           <Grid item>
             <Typography>
               {!hasStarted && "New Conversation"}

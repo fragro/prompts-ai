@@ -25,7 +25,7 @@ export default function ConversationsTab() {
       <Grid
         container
         direction="column"
-        justify="flex-start"
+        justifyContent="flex-start"
         alignItems="flex-start"
         spacing={1}
       >

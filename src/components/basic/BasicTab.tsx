@@ -32,8 +32,8 @@ export default function BasicTab() {
       <Box mb={1}>
         <Card className={styles.instructionCard}>
           <CardContent>
-            <Typography variant="subtitle1">Simple</Typography>
-            <Typography variant="body2">
+            <Typography component={'span'} variant="subtitle1">Simple</Typography>
+            <Typography component={'span'} variant="body2">
               This is a basic tool to explore the general idea of GPT-3. GPT-3
               will try to continue text you wrote in the prompt field and will
               display the result in the field below.
@@ -61,8 +61,8 @@ export default function BasicTab() {
               variant="outlined"
               fullWidth={true}
               multiline
-              rows={9}
-              rowsMax={100}
+              minRows={9}
+              maxRows={100}
               value={basicOutput}
               InputProps={{
                 readOnly: true,

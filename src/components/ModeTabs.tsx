@@ -83,7 +83,7 @@ export default function ModeTabs() {
     <div className={classes.root}>
       <AppBar position="static">
         <Grid
-          justify="space-between" // Add it here :)
+          justifyContent="space-between" // Add it here :)
           alignItems="center"
           container
           spacing={1}

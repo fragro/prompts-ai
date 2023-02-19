@@ -106,7 +106,7 @@ export function PromptEditor() {
       <Grid
         container
         direction="row"
-        justify="flex-start"
+        justifyContent="flex-start"
         alignItems="flex-start"
         spacing={3}
       >
@@ -324,8 +324,8 @@ export function PromptEditor() {
             id="prompt-text"
             label="A prompt"
             multiline
-            rows={9}
-            rowsMax={100}
+            minRows={9}
+            maxRows={100}
             fullWidth={true}
             onChange={handlePromptChange}
             value={prompt}

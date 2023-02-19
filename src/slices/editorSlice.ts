@@ -371,6 +371,8 @@ const editorSlice = createSlice({
       let workspace = state.workspaces.find(
         (w) => w.id === state.currentWorkspaceId
       )!;
+      console.log("action.payload:")
+      console.log(action.payload)
       workspace.basic.output = action.payload;
     },
     setBasicLoading: (state, action: PayloadAction<boolean>) => {
@@ -816,6 +818,7 @@ const fetchBasicOutputAsync = (): AppThunk => (dispatch, getState) => {
       return { ...response.data };
     })
     .then((response) => {
+      console.log(response);
       const choiceResult = response.choices[0] as ChoiceResult;
       dispatch(loadBasicOutput(choiceResult.text));
     })
